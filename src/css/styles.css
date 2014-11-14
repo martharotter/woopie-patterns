@@ -1,0 +1,161 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, textarea, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: "Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+vertical-align: baseline;
+line-height: 1.5em;
+}
+
+body {
+	color: #595959;
+}
+
+ul, ol {
+	outline: 0;
+	font-size: 15px;
+	line-height: 1.6em;
+}
+
+ul {
+	list-style: none;
+}
+
+p, .p {
+	max-width: 550px;
+	font-size: .9375em;
+	line-height: 1.6em;
+	margin-bottom: .8em;
+    font-family: "Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+font-weight: bold;
+color: #595959;
+font-family: "Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+outline: 0;
+}
+
+.header h1, .header h2 {
+	vertical-align: bottom;
+	line-height: 1.2em;
+	letter-spacing: -0.03em;
+	margin-bottom: 6px;
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	margin-bottom: .15em;
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.size1of1 {
+	width: 100%;
+}
+
+.lastUnit {
+	overflow: hidden;
+	-moz-background-clip: padding box !important;
+	-webkit-background-clip: padding box !important;
+	background-clip: padding box !important;
+	float: none;
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 190px;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.primary-nav {
+    width: 190px;
+    top: 190px;
+    left: 0;
+    background-color: #f2f2f2;
+    border-radius: 6px 0 0 0;
+    display: block;
+    position: fixed;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+.primary-nav > li {
+	font-size: 1.2em;
+	line-height: 2.33333333em;
+}
+
+.primary-nav a {
+	color: #9b9b9b;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 190px;
+	padding: 11px 15px 12px;
+	text-decoration: none;
+}
+
+.nav-label {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: inherit;
+}
+
+.wrap {
+	margin-left: 190px;
+	margin-right: 0;
+	width: auto;
+	background-color: #fff;
+	height: inherit;
+}
+.main-content {
+	padding: 0 .9375em 0 .9375em;
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+}
+
+.header {
+	overflow: visible;
+	margin-top: 1.875em;
+	margin-bottom: 2.5625em;
+	position: relative;
+	z-index: 5;
+}
+
+.logo {
+	background-image: url(/img/logo_176x176.png);
+	height: 190px;
+	width: 190px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.main-section {
+	margin-bottom: 66px;
+}
+
+.sub-section {
+    margin-bottom: 42px;
+}
+

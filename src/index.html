@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>Pattern Library | Woopie </title>  
+        <meta charset="utf-8"> 
+        <meta name="copyright" content="Copyright (c) 2014 Woopie Limited. All Rights Reserved."> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+        <meta name="apple-mobile-web-app-capable" content="yes"> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- JS -->
+        <script src="js/scripts.js"></script>
+
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="lib/codemirror.css">
+        <script src="lib/codemirror.js"></script>
+        <script src="lib/xml.js"></script>
+        <script src="lib/htmlmixed.js"></script>
+
+        <!-- HTML imports for individual patterns -->
+        <link rel="import" href="grids.html" id="grids" onload="templatesLoaded(event)" onerror="templatesFailed(event)" />
+        <link rel="import" href="typography.html" id="typography" onload="templatesLoaded(event)" onerror="templatesFailed(event)" />
+        <link rel="import" href="formElements.html" id="formElements" onload="templatesLoaded(event)" onerror="templatesFailed(event)" />
+    </head>
+
+    <body>
+        <div class="nav-toggle">
+            <div class="logo">
+                <a href="/"></a>
+            </div>
+            <ul class="primary-nav nomargin navtoggle">
+                <li>
+                    <a title="Grid System" class onclick="replaceContent('grids')">
+                        <span class="nav-label">Grid System</span>
+                    </a>
+                </li>
+                <li>
+                    <a title="Typography" class onclick="replaceContent('typography')">
+                        <span class="nav-label">Typography</span>
+                    </a>
+                </li>
+                <li>
+                    <a title="Form Elements" class onclick="replaceContent('formElements')">
+                        <span class="nav-label">Form Elements</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- main body content -->
+        <div class="wrap">
+            <div class="main-content" id="mainContentDiv"><div id="introText">
+                <!-- Header -->
+                <div class="lastUnit size1of1 header">
+                    <h1><a href="/">Pattern Library</a></h1>
+                </div>
+                <!-- /Header -->
+                <div class="line main-section">
+                    <div class="sub-section">
+                        <div class="lastUnit size1of1">
+                            <p>The Woopie Pattern Library is a byproduct of our move to agile development processes. Constant iteration requires both an efficient workflow and a well defined collection of <a href="http://bradfrostweb.com/blog/post/atomic-web-design/">atomic elements</a> that can assemble new UIs quickly without accruing new <a href="http://en.wikipedia.org/wiki/Technical_debt">technical or design debt</a>.</p>
+                            <p>We’re also solving an internal communication problem by documenting and assembling a reference site of our patterns. A common lexicon of code and UI elements benefits us in a few ways:</p>
+                            <ul class="disc p">
+                                <li>We can build consistently and focus on workflows and logic, not web forms and list items</li>
+                                <li>We can reuse code instead of roping in a developer</li>
+                                <li>We can maintain our code by seeing our patterns in one place, define elements in our application, and keep redundancy to a minimum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("myTextarea"), {
+        mode: "text/html",
+        autoClearEmptyLines: true,
+        lineNumbers: true,
+        lineWrapping: true,
+        readyOnly: true,
+        theme: "default"
+    });
+</script>
