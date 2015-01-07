@@ -8,9 +8,9 @@
     <!-- /Header -->
 
     <div class="lastUnit size1of1">
+        <p class="mobile-top-nav nomargin full-width fwb"> <a href="#buttons">Buttons</a> </p>
         <p class="mobile-top-nav nomargin full-width fwb"> <a href="#">Navigation</a> </p>
         <ul class="local-nav selfclear">
-            <li><a href="#buttons">Buttons</a></li>
             <li><a href="#text-input">Text Input</a></li>
             <li><a href="#field-help">Field help</a></li>
             <li><a href="#radio">Checkboxes &amp; Radios</a></li>
@@ -23,16 +23,16 @@
             <h3>Buttons</h3>
             <div class="example">
                 <div class="line">
-                    <button class="button primaryBtn">Primary</button>
-                    <button class="button seconderyButton">Standard</button>
+                    <a href="" class="btn btn-primary"><i class="icon-plus icon-white"></i> Primary CTA Button</a>
+                    <button class="button seconderyButton">Secondary</button>
                 </div>
             </div>
 
             <div class="line">
                 <div class="unit size1of2 code" style="height:67px">
                     <textarea class="pattern" name="pattern" id="pattern">
-<button class="button primaryBtn">Primary Button</button>
-<button class="button seconderyButton">Regular Button</button>
+<a href="" class="btn btn-primary"><i class="icon-plus icon-white"></i> Create new publication</a>
+<button class="button primaryBtn">Secondary Button</button>
                     </textarea>
 
                     <!-- 
@@ -93,10 +93,16 @@
                     </div>
                     -->
                 </div>
+                <br clear=all>
                 <div class="lastUnit size1of2">
                     <div class="notes">
-                        <p>Buttons are categorized by style (Primary and Back).</p>
-                        <p>The Primary buttons are gold with white button text and the Back buttons are light gray with dark gray text. Both the Primary buttons are 30px high and the Back buttons are 30px high.</p>
+                        <p>Our button definitions and look-and-feel come from Bootstrap, you can find the definitions and css settings in bootstrap.css.</p>
+                        <p>All buttons use the parent .btn class in order to set some initial common styles and behaviors like border-color.</p>
+                        <p>Primary buttons, or Call-to-Action buttons, are created with the .btn-primary class. Add that to your button definition as shown above. Our primary CTA buttons are a royal blue color.</p>
+                        <p>Secondary buttons are used in forms when we absolutely cannot omit them. They are a light grey color, slightly smaller than the primary buttons, and are created by simply using the .btn class on its own. This is the default style for a button so there is no need to add additional clases.</p>
+                        <p>We use orange to indicate help or support. Our Intercom "talk to us" button is orange, "more information" indicators on forms are orange, and any links to help documentation or other assistance is orange as well. You can create a support button with the class .btn-warning.</p>
+                        <br/>
+
                         <p>Primary buttons are used in dashboards or when they occur alone. Back buttons are used in forms (their height is the same as the input fields).</p>
                         <p>Buttons can be created using the <code>button</code> tag accompanied by the <code class="classname">button</code> class.</p>
                         <p>To make a Primary button just combine <code class="classname">primaryBtn</code> with the <code class="classname">button</code> class. To make a Back button use <code class="classname">seconderyButton</code> class.</p>

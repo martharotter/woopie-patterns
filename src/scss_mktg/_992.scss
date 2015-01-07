@@ -1,0 +1,284 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* 992 =================================================== */
+
+#top-alert { 
+
+	p {
+		display: block;
+	}
+}
+
+
+.row	{
+	margin:0 auto;
+	width: 960px;
+	clear:both;
+}
+
+.lcol	{
+	float: left;
+	padding:0 20px;
+	width: 380px;
+}
+
+.rcol	{
+	float: right;
+	padding:0 20px;
+	width: 500px;
+}
+
+.ncol	{
+	float: left;
+	padding:0 20px;
+	width: 240px;
+}
+
+.wcol	{
+	float: right;
+	padding:0 20px;
+	width: 640px;
+}
+
+#home-banner	{
+	
+	nav	{
+
+		ul {
+
+			float:right;
+			margin: 50px 0 40px 0;
+
+			li {
+				list-style:none;
+				display: inline;
+				margin-left: 30px;
+				position: relative;
+			}
+		}
+	}
+
+	#headmain	{
+
+		h1	{
+			font-size: 50px;
+			line-height: 60px;
+			margin: 0 0 40px 0;
+		}
+		
+		.btn {
+			display: inline;
+		}
+	}
+
+	#features-list	{
+
+		margin:-7px 0 40px 0;
+		padding:0;
+		line-height: 35px;
+
+		li {
+			background: url(../img/rarrow.png) no-repeat top right;
+			margin:0 20px 0 0;
+			padding: 0 20px 0 0;
+
+			&:last-child	{
+				background: url(../img/tick.png) no-repeat top right;
+			}
+		}
+	}
+
+}
+
+#alpha-form, #contact-form	{
+
+	.row {
+		width: 640px;
+	}
+}
+
+.feature {
+
+	hgroup {
+
+		h1, h2 {
+			text-transform:uppercase;
+			letter-spacing:2px;
+		}
+	}
+
+	h3	{
+		font-size: 56px;
+		line-height: 60px;
+		margin: 0 0 20px 0;
+		padding: 0;
+		
+		#home &	{
+			margin: 0 0 60px 0;
+		}
+	}
+	
+	h4	{
+		margin: 0 0 60px 0;
+		font-weight: 600;
+	}
+	
+	h5	{
+		font-size: 16px;
+		font-weight: bold;
+		margin: 0 0 5px 0;
+		padding: 0 0 5px 0;
+		text-transform: uppercase;
+		
+		a {
+			float: right;
+			font-size: 14px;
+			font-style: italic;
+			font-weight: normal;
+			text-transform: none;
+		}
+	}
+}
+
+
+
+#devices-icon-list	{
+	display:block;
+}
+
+
+footer	{
+
+	clear: both;
+
+	article	{
+		width:280px;
+	}
+	
+	#address	{
+		float: left;
+		width:600px;
+	}
+	
+	#support	{
+		clear: right;
+		float: left;
+		width:280px;
+		margin: 0 20px;
+	}
+}
+
+.feature-example	{
+
+	.example-item	{
+		float: left;
+		width: 230px;
+		
+		padding: 0 0 20px 0;
+		
+		p {
+			padding: 20px;
+		}
+	}
+	
+	.example-image 	{
+		padding:0 20px 0 0;
+		width: auto;
+		float: right;
+	}	
+	
+	.example-image img 	{
+		width: auto;
+		height: auto;
+	}
+
+}
+
+
+#example2 {
+
+	.example-image {
+		padding: 0 0 0 0;
+	}
+}
+
+
+.alertbar span	{
+	display: inline;
+	visibility: visible;
+}
+
+
+#splash-devices {
+	margin: 20px 0 0 0;
+	width: 80%; 
+}
+
+#splash-form {
+
+	.splash-intro {
+		margin:0 120px 40px 120px;
+	}
+	
+	
+	
+	.splash-thanks {
+		margin: 20px 120px;
+	}
+	
+	&.feature {
+
+		hgroup	{
+			margin: 0 100px;
+		}
+	}
+	
+	form {
+		padding:40px 100px;
+		margin: 0;
+	}
+}
+
+// Case Study
+.case-study {
+
+	.case-study-unit {
+		padding: 0 60px 20px 120px;
+		
+		&.end-cta {
+			padding: 40px;
+		}
+	}
+	
+
+	.sidequote {
+		float: right;
+		margin: 0 -60px 20px 40px;
+		width: 360px;
+	}
+	
+	.mainquote {
+		margin-left:-40px;
+	}
+}
+
+// Team
+#home-banner {
+
+	.team-member {
+		
+		img {
+			margin: 10px -20px 20px 40px;
+			float: right;
+			width: 200px;
+		}
+	}	
+}
+		

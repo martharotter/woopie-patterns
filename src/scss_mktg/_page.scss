@@ -1,0 +1,1814 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+body	{
+	background: #fff url(../img/homepage-bg.png) repeat-x;
+	font-family:  "freight-sans-pro-n3", "freight-sans-pro", "OpenSans-Light", Helvetica, Sans-Serif;
+	font-weight: 400;
+	overflow-x:hidden;
+
+}
+
+body#alpha, body#contact, body#features, body#splash	{
+	background: #eee url(../img/alpha-bg.png) repeat-x;
+}
+
+body#splash	{
+	background: #fff url(../img/alpha-bg.png) repeat-x;
+}
+
+body#education	{
+	background: #fff url(../img/education/header.jpg) repeat-x;
+}
+
+body#business	{
+	background: #fff url(../img/business/header.jpg) repeat-x;
+	background-position: center top;
+}
+
+body#magazine	{
+	background: #fff url(../img/magazine/header.jpg) repeat-x;
+	background-position: center top;
+}
+
+ body#features	{
+ 	background-color: #fff;
+ }
+ 
+ 
+
+
+ body#casestudy	{
+ 	background: #fff;
+ }
+
+$vlgrey	: #e7e7e7;
+$lgrey	: #999999;
+$dgrey	: #383837;
+$blue	: #0098ff;
+$red 	: #c72211;
+$yellow	: #ffc000;  
+$green	: #b2cf00;
+$orange	: #ff5a00;
+$purple	: #d800ff;
+$pink	: #ff00a2;  
+
+$dribbble-color:#ea4c89;
+$facebook-color:#3b5998;
+$github-color:#171515;
+$google-color:#dd4b39;
+$linkedin-color:#0e76a8;
+$rss-color:#ee802f;
+$twitter-color:#00aced;
+
+.amp	{
+	font-weight: normal;
+}
+
+.alertbar	{
+	background: #000 url(../img/alert-bg.png) repeat-x;
+	color: #fff;
+	clear:both;
+	min-height:50px;
+
+	p {
+		color: $lgrey;
+		margin:0;
+		padding:0 0 0 20px;
+		float:left;
+		font-style:italic;
+		line-height:50px;
+
+		#alpha &	{
+			float:none;
+			text-align: center;
+		}
+	}
+
+	.btn	{
+		float:right;
+		margin:10px 20px 0 0;
+	}
+	
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			display: table-cell;
+			padding: 12px 0 0 0;
+			text-align: center;
+			width: 1%;
+			
+			a {
+				color: $lgrey;
+				
+				&:hover {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#top-alert {
+	position:fixed;
+	top:0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+	
+	#top-logo {
+		
+		padding: 12px 20px 0 20px;
+		float: left;
+		width:0;
+		
+		img {
+			width: 96px;
+		}		
+			
+		&.showme {
+			display: block; 
+			width: 96px;
+		}
+	}
+
+}
+
+#home-banner	{
+
+	padding: 50px 0 0 0;
+
+	#logo	{
+		padding: 40px 0;
+		margin:0;
+	}
+
+	#headmain	{
+		color: #fff;
+		min-height: 305px;
+		clear: both;
+		border-top:1px solid rgba(0,0,0,0);
+
+		h1	{
+			font-weight:300;
+			
+			&.huge	{
+				font-family: "freight-sans-pro";
+				font-weight: 900;
+				font-size: 200px;
+				line-height: 200px;
+				margin: -60px 0 60px 0;
+			}
+			
+			&#edu {
+				color: $dgrey;
+			}
+			
+			
+		}
+
+		h2	{
+			color: $lgrey;
+			font-weight:normal;
+			font-size: 20px;
+			line-height: 24px;
+			margin:0 0 20px 0;
+		}
+
+		.btn {
+			@include box-shadow(0 1px 4px rgba(0,0,0,0.75));
+			position:relative;
+			padding: 12px 16px;
+
+			&:hover	{
+				@include box-shadow(0 1px 1px rgba(0,0,0,0.5));		
+				top:1px;	
+			}
+		}
+	}
+
+	p {
+		color: $dgrey;
+		font-size:18px;
+		margin:0 0 40px 0;
+	}
+
+	ul#checklist {
+
+		border-top: 2px solid $vlgrey;
+		margin:0;
+		padding:0;
+
+		li {
+			background: url(../img/green-bullet.png) 0 10px no-repeat;
+			border-bottom: 1px solid $vlgrey;
+			margin:0;
+			padding:8px 0 8px 30px;
+			list-style:none;
+			font-size:18px;
+
+			&.soon {
+				background: url(../img/orange-bullet.png) 0 10px no-repeat;
+			}
+			
+			a	{
+				font-weight: bold;
+				color: $blue;
+			}
+		}
+
+	}
+
+	nav	{
+
+		ul {
+
+			li {
+
+				list-style: none;
+				font-weight: 400;
+				font-size: 13px;
+				text-transform: uppercase;
+				color: $grey;
+				
+				b {
+					font-weight: 400;
+					opacity: .5;
+				}
+
+				a {
+					color: $lgrey;
+					
+
+					&:hover, &.active	{
+						color:#fff;
+						text-decoration: none;
+					}
+					
+					&.white-bg {
+						
+						&:hover, &.active	{
+							color:$dgrey;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.sidenote	{
+		font: {
+			style: italic;	
+			family: "freight-text-pro", Georgia, Serif;
+			weight: 400;
+			}
+		line-height: 1.2em;
+		color: $lgrey;
+	}
+
+}
+
+#devices, #devices-end	{
+	max-width:680px;
+}
+
+.browser-frame {
+	background: url(../img/browser.png) no-repeat;
+	padding:69px 1px 0 1px;
+	width:680px;
+	position: relative;
+
+	img {
+		width:678px;
+	}
+
+	.sample-tab	{
+		background-repeat: no-repeat;
+		position: absolute;
+		left:-3px;
+		top:-3px;
+		width:100px;
+		height: 100px;
+		font-weight: bold;
+		
+		b {
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			font-weight:bold;
+			-webkit-transform: rotate(-45deg); 
+			-moz-transform: rotate(-45deg);
+			text-transform: uppercase;
+			text-align:center; 
+			text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+			margin:26px 0 0 -32px;
+			width: 142px;
+			
+		}
+	}
+	
+	@each $colour in red, blue, green {
+		.#{$colour}-tab {
+			background-image: url('../img/#{$colour}-tab.png');
+		}
+	}
+}
+
+.browser	{
+	max-width:680px;
+	min-height: 400px;
+}
+
+.feature	{
+
+	border-top: 1px solid $vlgrey;
+	clear:both;
+	min-height: 500px;
+
+	.rcol	{
+		padding: 40px 20px 0 20px;
+	}
+
+	.lcol	{
+		padding: 40px 20px 0 20px;
+	}
+
+	hgroup	{
+		border-top:2px solid black;
+		border-bottom:1px solid $vlgrey;
+		height: 70px;
+		line-height: 70px;
+		text-align:center;
+		text-transform:uppercase;
+		margin-top: -1px;
+		position:relative;
+		letter-spacing: 3px;
+
+		h1	{
+			color: $dgrey;
+			display:inline;
+			font-size:16px;
+			font-weight:400;
+		}
+
+		h2	{
+			display:inline;
+			font-weight:400;
+			color: $lgrey;
+			font-size:16px;
+		}
+
+		.arrow	{
+			color: white;
+			display: block;
+			position:absolute;
+			@include rounded(20px);
+			width: 20px;
+			height: 20px;
+			left:50%;
+			bottom:0;
+			margin: 0 0 -10px -10px;
+			text-indent:-999;
+			background: $vlgrey url(../img/down-arrow.png);
+			border-bottom-color: lighten($blue,40%);
+		}
+		
+		#step-through	{
+			display: inline;
+			list-style: none;
+			position: absolute;
+			left:50%;
+			margin-left:-79px;
+			top:56px;
+			
+			li {
+				border-radius: 20px;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				font-size: 18px;
+				display: inline-block;
+				margin: 0 5px 0 0;
+				padding: 2px 3px 6px 6px;
+				background: $vlgrey;
+				color: $lgrey;
+				text-align: center;
+				
+				&.st-active	{
+					background: $red;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	h3	{
+		font-weight:300;
+	}
+
+	ul	{
+		margin-left: 20px;
+		list-style: disc;			
+				
+		&.slides, &.image-list {
+			margin-left: 0;
+			list-style: none;
+		}
+	}
+
+	
+	.flex-direction-nav {
+		list-style: none;
+		margin: 0;
+	}
+	
+	#devices-icon-list {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	p, li {
+		font-size: 16px;
+	}
+
+}
+
+#home-examples	{
+	border-top: 1px solid $vlgrey;
+	clear: both;
+}
+
+.feature-example	{
+	border-top:2px solid $dgrey;
+	float: left;
+	margin-top: -1px;
+	width: 50%;
+	
+	h1	{
+		background: $vlgrey url(../img/down-arrow.png) no-repeat 90% 10px;
+		color: $dgrey;
+		display: inline-block;	
+		font-size:12px;
+		font-weight: normal;
+		line-height: 40px;
+		margin: 0;
+		padding: 0 40px 0 20px;
+		text-transform:uppercase;
+		letter-spacing: 2px;
+	}
+	
+	.example-item	{
+		float: left;
+	}
+	
+	p	{
+		font-size: 16px;
+		padding: 20px;
+		
+		a {
+			color: $blue;
+		}
+	}
+	
+	.example-image	{
+		float: right;
+		padding: 20px 30px;
+	}
+	
+	blockquote	{
+		border: none;
+		display: block;
+		clear: both;
+		margin: 0;
+		padding: 0 0 20px 20px;
+		
+		p, cite {
+			display: inline;
+			font-family: "freight-sans-pro-n3", "freight-sans-pro", "Open Sans", Helvetica, Sans-Serif;
+			font-style: italic;
+			color: $grey;
+			margin: 0;
+			padding: 0 20px 0 0;
+		}
+		
+		cite	{
+			color: $dgrey;
+			font-style: normal;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin:8px 0 0 0;
+			padding: 0;
+		}
+		
+		a {
+			color: $blue;
+		}
+	}
+}
+
+#example2	{
+	border-left: 1px solid $vlgrey;
+	margin-left:-1px;
+	
+	blockquote {
+	
+		p, cite {
+			display: block;
+		}
+	}
+}
+
+#home-create.feature, .features-available.feature {
+
+	&:hover	{
+
+		hgroup {
+
+			h1	{
+				color: darken($blue,10%);
+			}
+
+			h2, .amp	{
+				color: $blue;
+			}
+
+			.arrow{
+				background-color: $blue;
+			}
+		}
+	}
+
+	hgroup	{
+		border-top-color: $blue;
+	}
+}
+
+#home-design.feature, #contact-form.feature, .features-onsale.feature {
+
+	&:hover	{
+
+		hgroup {
+
+			border-bottom-color: lighten($red,40%);
+
+			h1	{
+				color: darken($red,10%);
+			}
+
+			h2, .amp	{
+				color: $red;
+			}
+
+			.arrow{
+				background-color: $red;
+			}
+		}
+	}
+
+	hgroup	{
+		border-top-color: $red;
+	}
+}
+
+#alpha-form, #contact-form	{
+	background: #fff;
+	@include box-shadow(0 1px 10px 5px rgba(0,0,0,0.2));
+
+	.row {
+
+		height:auto;
+	}
+
+	form {
+		padding:40px 20px;
+		text-align: center;
+
+		::-webkit-input-placeholder  { 	color: $lgrey; }
+		input:-moz-placeholder { color: $lgrey; }
+
+		input, textarea {
+			border: 1px solid lighten($lgrey,20%);
+			width:100%;
+			color: $lgrey;
+			@include rounded(2px);
+			padding:7px 8px;
+			margin:0 0 20px 0;
+
+			&:active, &:focus	{
+				color: $dgrey;
+			}
+		}
+		
+		select {
+			width:100%;
+		}
+		
+		label {
+			width: 100%;
+			padding: 0;
+			text-align: left;
+			
+			&.spamcheck {
+				font-weight: normal;
+				margin-top: -10px;
+				display: block;
+				
+				span {
+					font-weight: bold;
+					font-size: 1.4em;
+				}
+			}
+		}
+		
+		#enterVerify {
+			display: block;
+			width: 60px;
+			margin-left: 0;
+			text-align: left;
+		}
+		
+		.help {
+			float: right;
+			text-align: right;
+			
+			a {
+				color: $blue;
+			}
+		}
+		
+		.label-item {
+			padding: 0 0 20px 0;
+		}
+
+		.btn-success	{
+			display: block;
+			color: #fff;
+			margin: 0 auto;
+			text-align:center;
+			@include box-shadow(0 1px 4px rgba(0,0,0,0.75));
+			position:relative;
+
+			&:hover	{
+				@include box-shadow(0 1px 1px rgba(0,0,0,0.5));		
+				top:1px;	
+			}
+		}
+		
+		.btn-strong	{
+			display: block;
+			color: #fff;
+			margin: 0 auto;
+			text-align:center;
+			@include box-shadow(0 1px 4px rgba(0,0,0,0.75));
+			position:relative;
+
+			&:hover	{
+				@include box-shadow(0 1px 1px rgba(0,0,0,0.5));		
+				top:1px;	
+			}
+		}
+		
+		p	{
+			text-align: left;
+			margin:0 0 20px 0;
+			
+			a {
+				border-bottom: 2px solid $yellow;
+				
+				&:hover	{
+					text-decoration: none;
+					border-color: darken($yellow,5%);
+				}
+			}
+		}
+		
+		ul	{
+			text-align: left;
+		}
+		
+		.form-row	{
+			clear: both;
+			background: lighten($vlgrey,5%);
+			border-bottom: 1px solid #fff;
+			padding: 6px 16px;
+			
+			&:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			span {
+				float: left;
+				text-align: left;
+				width: 160px;
+				padding: 2px 0 0 0;
+				
+				&.helper	{
+					color: $grey;
+					padding: 2px 0 0 10px;
+				}
+			}
+			
+			.inputs	{
+				float: left;
+				
+				input {
+					margin: 0;
+				}
+			
+				.cc-number	{
+					width: 180px;
+				}
+				
+				.cc-exp	{
+					width: 80px;
+				}
+				
+				.cc-cvc {
+					width: 80px;
+				}
+				
+				.address_zip  {
+					width: 80px;
+				}
+				
+				.name, .company, .address	{
+					width: 300px;
+				}
+				
+				input.invalid {
+			      border-color: $red;
+			    }
+			}	
+		}
+		
+		h3	{
+			border-bottom: 1px solid $vlgrey;
+			text-align: left;
+			font-size: 24px;
+			line-height: 28px;
+			padding: 20px 0 10px 2px;
+			margin: 0 0 1px 0;
+		}
+		
+		.validation	{
+			display: block;
+			font-size: 14px;
+			text-transform: uppercase;
+			text-align: left;
+			margin: 0;
+			padding: 8px 12px;
+		}
+					
+		.validation.failed {
+			background: $red;
+			color:#fff;
+			text-align: left;
+			
+			&:after	{
+				content: 'Validation failed';
+			}
+		}
+		
+		.validation.passed {
+			background: $green;
+			color:#fff;
+			text-align: left;
+			
+			&:after	{
+				content: 'Validation passed';
+			}
+		}
+		
+		.form-pay	{
+			background: $dgrey;
+			padding: 6px 16px;
+			margin: 0 0 40px 0;
+			
+			input	{
+				width: 240px;
+				margin-left: 160px;
+			}
+		}
+		
+		.alert {
+			background: $green;
+			border: none;
+			border-bottom: 2px solid darken($green,5%);
+			color: $white;
+			font-size: 16px;
+			padding: 8px 12px;
+			
+			a {
+				background: url(../img/rarrow.png) no-repeat 0 -7px;
+				border: none;
+				color: $white;
+				float: right;
+				font-size: 11.5px;
+				letter-spacing: 2px;
+				padding: 0 0 0 16px;
+				text-transform: uppercase;
+				text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+				
+				&:hover {
+					color: darken($green,20%);
+				}
+			}
+		}
+		
+	}
+
+}
+
+#home-publish.feature, #alpha-form.feature {
+
+	&:hover	{
+
+		hgroup {
+			
+			border-bottom-color: lighten($yellow,40%);
+
+			h1	{
+				color: darken($yellow,10%);
+			}
+
+			h2, .amp	{
+				color: $yellow;
+			}
+
+			.arrow{
+				background-color: $yellow;
+			}
+		}
+	}
+
+	hgroup	{
+		border-top-color: $yellow;
+	}
+}
+
+#features-templates.feature {
+
+	&:hover	{
+
+		hgroup {
+
+			h1	{
+				color: darken($orange,10%);
+			}
+
+			h2, .amp	{
+				color: $orange;
+			}
+
+			.arrow{
+				background-color: $orange;
+			}
+		}
+	}
+
+	hgroup	{
+		border-top-color: $orange;
+	}
+}
+
+#features-populate.feature, .features-sample.feature {
+
+	&:hover	{
+
+		hgroup {
+
+			h1	{
+				color: darken($green,10%);
+			}
+
+			h2, .amp	{
+				color: $green;
+			}
+
+			.arrow{
+				background-color: $green;
+			}
+		}
+	}
+
+	hgroup	{
+		border-top-color: $green;
+	}
+}
+
+#features-manage.feature {
+
+	&:hover	{
+
+		hgroup {
+
+			h1	{
+				color: darken($pink,10%);
+			}
+
+			h2, .amp	{
+				color: $pink;
+			}
+
+			.arrow{
+				background-color: $pink;
+			}
+		}
+	}
+
+	hgroup	{
+		border-top-color: $pink;
+	}
+}
+
+
+#devices-icon-list	{
+
+	position:relative;
+	margin: 0;
+	margin-bottom:20px;
+	
+	li {
+			background-image: url(../img/devices-icons.png);
+			display:inline-block;
+			margin:0 20px 20px 0;
+			width: 50px;
+			height:40px;
+			overflow: hidden;
+			
+
+			p {
+				position:absolute;
+				left:-9999px;
+
+				b {
+					color: $yellow;
+					font-weight:normal;
+				}
+			}
+
+			&:hover	{
+				background-position: 0 -40px;
+
+				p {
+					left:0px;
+					top:50px;
+					background: #000;
+					color: #fff;
+					padding:2px 8px;
+					@include rounded(4px);
+					text-indent:0;
+					z-index:100;
+				}
+			}
+	}
+
+	#dev02	{
+		background-position: -70px 0;
+			&:hover	{
+				background-position: -70px -40px;
+
+				p {
+					left:70px;
+				}
+			}
+	}
+
+	#dev03	{
+		width:29px;
+		background-position: -140px 0;
+			&:hover	{
+				background-position: -140px -40px;
+
+				p {
+					left:140px;
+				}
+			}
+	}
+
+	#dev04	{
+		width:30px;
+		background-position: -189px 0;
+			&:hover	{
+				background-position: -189px -40px;
+
+				p {
+					left:189px;
+				}
+			}
+	}
+
+	#dev05	{
+		width:29px;
+		background-position: -239px 0;
+			&:hover	{
+				background-position: -239px -40px;
+
+				p {
+					left:239px;
+				}
+			}
+	}
+}
+
+#home-banner .image-list	{
+
+	ul {
+		margin: 0;
+	}
+	
+	li {
+		border: 1px solid $vlgrey;
+		margin: 0 0 40px 0;
+		padding: 20px;
+		
+		p {
+			background: url(../img/green-bullet-up.png) no-repeat 0 4px;
+			padding: 0 0 0 30px;
+			margin:10px 0 0 0;
+			
+			&.no-arrow	{
+				background: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+#quotes	{
+	padding:20px 0 0 0;
+}
+
+.quoteslist	{
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	
+	.quote {
+
+		line-height: 1.2em;
+		font-size: 16px;
+		margin: 0 0 8px 0;
+	}
+	
+	.source	{
+		border-top: 1px solid darken($vlgrey,10%);
+		color: $dgrey;
+		padding:8px 0 0 0;
+		
+		i	{
+			font-size: 12px;
+			font-style: normal;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.sample-buttons	{
+	margin: 0 0 20px 0;
+}
+
+.download-samples	{
+	margin: 0;
+	padding: 0;
+	
+	dt	{
+		float: left;
+		width: 100px;
+		overflow: hidden;
+		clear: left;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		line-height: 20px;
+		margin: 0;
+		padding: 0 0 5px 2px;
+		font-weight: bold;
+	}
+	
+	dd	{
+		color: $grey;
+		margin-left:120px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0 0 5px 0;
+	}
+	
+	a	{
+	
+		display: block;
+		font-weight: 900;
+		
+		i	{
+			color: $grey;
+			font-weight: normal;
+		}
+	}
+}
+
+footer	{
+	background: rgb(231,231,231);
+	margin:0;
+	padding: 20px 0;
+
+	article	{
+		color: $lgrey;
+		float:left;
+		margin:0 20px;
+
+		h1	{
+			color: $dgrey;
+			font-weight:normal;
+			margin:20px 0;
+			font-size:14px;
+			text-transform: uppercase;
+			lettewr-spacing:2px;
+		}
+	}
+	
+	#support	{
+	
+		margin:0 20px;
+		
+		h1 {
+			color: $dgrey;
+			font-weight:normal;
+			margin:20px 0;
+			font-size:14px;
+			text-transform: uppercase;
+			lettewr-spacing:2px;
+		}
+		
+		a	{
+			opacity: 0.75;
+			
+			&:hover	{
+				opacity: 1;
+			}
+		}
+	}
+
+	#mce-EMAIL	{
+		border: 1px solid lighten($lgrey,20%);
+		width:200px;
+		float:left;
+		@include rounded(2px);
+		padding:7px 8px;
+	}
+
+	#mc-embedded-subscribe	{
+		float:right;
+	}
+
+	#address	{
+		margin:20px;
+		color: lighten($lgrey,10%);
+		font-style: italic;
+
+		small	{
+			display:block;
+			margin:0 0 5px 0;
+		}
+	}
+}
+
+#shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+ 
+#press-modal {
+    position: absolute;
+    background: #000;
+    width: 320px;
+    padding: 20px;
+    top: 50px;
+    left:20px;
+    z-index: 100;
+}
+ 
+#press-modal h2 {
+    color: $vlgrey;
+    line-height: 20px;
+    position: relative;
+}
+     
+#press-modal span {
+	position: absolute;
+    right: 0;
+    top: -2px;
+    display: inline-block;
+    cursor: pointer;
+}
+         
+
+#press-modal img {
+    margin: 10px 0;
+    max-width: 100%;
+}
+
+#press-modal p {
+	margin: 0 0 20px 0;
+	color: #fff;
+}
+
+.getlogos	{
+	display: block;
+}
+
+
+/* Exhibition banner */
+ 
+#pme-banner	{
+	border:1px solid $vlgrey;
+	border-width: 1px 0;
+	clear: both;
+	padding:10px;
+	margin: 0 auto 40px auto;
+	text-align: center;
+	
+	img	{
+		margin: 0 auto;
+	}
+	
+	h3	{
+		font-size: 16px;
+		line-height: 16px;
+		padding: 5px 0 10px 0;
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	p	{
+		font-size: 18px;
+		line-height: 20px;
+		padding: 10px 0 5px 0;
+		margin: 0;
+		text-align: center;
+		
+		a {
+			color: $blue;
+		}
+	}
+}
+
+/* Order table */
+#home-banner .ordering	{
+
+	border-radius: 4px;
+	
+	td	{
+		background: #fff;
+		border: 1px solid $lightgrey;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	th {
+		padding: 5px 20px;
+		border: 1px solid $dgrey;
+		border-bottom: 1px solid $lightgrey;
+		background: darken($dgrey,10%);
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	.order-details td	{
+		
+		h2	{
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $grey; 
+		}
+		
+		p	{
+			font-size: 24px;
+			margin: 0;
+			padding: 0;
+			line-height: 28px;
+			text-align: center;
+		}
+	}
+	
+	.order-pricing td	{
+		color: $dgrey;
+		font-size: 48px;
+		line-height: 48px;
+		font-weight: bold;
+		
+		span	{
+			color: $dgrey;
+			display: block;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: normal;
+		}
+	}
+	
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#tcmodal	{
+	display: none;
+	width: 600px;
+	height: 400px;
+	overflow: scroll;
+	padding: 40px;
+	display: none;
+	background: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+	
+	a {
+		text-decoration: underline;
+	}
+}
+
+.iubenda-ibadge {
+	display: block;
+	margin: 5px 0 0 0;
+}
+
+/* Splash */
+#splash-banner {
+	text-align: center;
+	
+	.row {
+		padding: 40px 0;
+	}
+		
+	h2 {
+		color: $white;
+		margin: 0 0 20px 0;
+		padding: 0;
+		font-weight: 300;
+		font-size: 24px;
+	}
+}
+
+#splash-devices {
+	
+}
+
+#splash-form {
+	
+	background: $white;
+	margin: 0;
+	
+	.splash-intro {
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	.splash-thanks {
+		font-size: 20px;
+		text-align: center;
+		border-top: 1px solid $vlgrey;
+	}
+	
+	
+	&.feature {
+	
+		border: none;
+	
+		&:hover	{
+	
+			hgroup {
+				
+				border-bottom-color: lighten($blue,40%);
+	
+				h1	{
+					color: darken($blue,10%);
+				}
+	
+				h2, .amp	{
+					color: $blue;
+				}
+	
+				.arrow{
+					background-color: $blue;
+				}
+			}
+		}
+
+		hgroup	{
+			border-top-color: $blue;
+		}
+	}
+	
+	form {
+		
+		margin: 0;
+		text-align: center;
+
+		::-webkit-input-placeholder  { 	color: $lgrey; }
+		input:-moz-placeholder { color: $lgrey; }
+
+		input, textarea {
+			border: 1px solid lighten($lgrey,20%);
+			width:100%;
+			color: $lgrey;
+			font-size: 14px;
+			@include rounded(2px);
+			padding:14px 16px;
+			margin:0 0 10px 0;
+
+			&:active, &:focus	{
+				color: $dgrey;
+			}
+		}
+		
+		select {
+			width:100%;
+		}
+
+		.btn-splash	{
+			display: block;
+			color: #fff;
+			font-size: 12px;
+			font-weight:300;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin: 0 auto;
+			text-align:center;
+			padding: 10px;
+			background: $blue;
+			border: none;
+			border-bottom: 1px solid darken($blue,5%);
+			position:relative;
+
+			&:hover	{
+				background: darken($blue,10%);
+				border-bottom: 1px solid darken($blue,20%);	
+				
+			}
+		}
+	}
+}
+
+// Case Study
+#casestudy #home-banner #headmain {
+	min-height: 100px;
+}
+
+.btn-block {
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 14px;
+}
+
+.download-file {
+	margin: 0 0 10px 0;
+	
+	.download-help {
+		color: $lightgrey;
+		display: block;
+		font-family: "freight-text-pro";
+		font-style: italic;
+		padding: 5px 0;
+		text-align: center;
+		
+		i {
+			font-style: normal;
+			opacity: 0.5;
+			padding: 0 10px;
+		}
+		
+		a {
+			color: $blue;
+			
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+	
+	&:hover {
+		.download-help {
+			color: $grey;
+		}
+	}
+}
+
+.case-study {
+
+	h1 {
+		color: $blue;
+	}
+	
+	p {
+		font-size: 1.2em;
+	}
+	
+	h4 {
+		border: 2px solid $lgrey;
+		border-width: 2px 0;
+		margin: 0;
+		padding: 10px;
+		text-transform: uppercase;
+	}
+	
+	ol, ul {
+		
+		background: $vlgrey;
+		margin: 0 0 40px 0;
+		padding: 20px 28px;
+		
+		li {
+			font-size: 1.35em;
+			margin: 0 0 12px 20px;
+			padding: 0 40px 12px 0;
+		}
+	}
+	
+	.quote {
+	
+		border-left: 2px solid red;
+		margin: 0 0 20px 0;
+		padding: 0 0 0 40px;
+		
+		blockquote {
+			border:none;
+			margin: 0;
+			padding: 0;
+		
+			p {
+				font-family: "freight-text-pro";
+				font-weight: 100;
+				font-size: 2em;
+				font-style: italic;
+				line-height: 1.4;
+			
+			}
+		}
+		
+		figcaption {
+			
+			p {
+				margin: 0;
+				padding: 18px 0 12px 0;
+			}
+		}
+	}
+	
+	figure {
+		
+		img {
+			display: block;
+			margin: 0;
+		}
+	}
+	
+	figcaption {
+		
+		p {
+			color: $grey;
+			margin: 0;
+			padding: 12px 16px;
+			font-family: "freight-text-pro";
+			font-style: italic;
+		}
+	}
+	
+	.sidequote {
+		
+		blockquote {
+			
+			p {
+				font-size: 1.4em;
+				margin: 0 0 10px 0;
+				padding: 0;
+			}
+		}
+	}
+	
+	.mainquote {
+	
+		margin: 0 0 40px 0;
+	
+		blockquote {
+			
+			p {
+				margin: 0 0 10px 0;
+				padding: 0;
+			}
+		}
+	}
+	
+	.image {
+		
+		margin: 0 0 40px 0;
+		
+		figcaption {
+			
+			p {
+				background: $vlgrey;
+			}
+		}
+	}
+	
+	.end-cta {
+		border-top: 1px solid $vlgrey;
+		color: $grey;
+		font-family: "freight-text-pro";
+		font-size: 1.4em;
+		padding: 80px 0;
+		margin: 0 0 40px 0;
+		text-align: center;
+		
+		p {
+			margin: 20px 0 0 0;
+		}
+		
+		.case-study-contact {
+			color: $blue;
+			text-decoration: underline;
+			
+			&:hover {
+				color: darken($blue,10%);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Spam test
+input#lvcheck { display: none; position: absolute; left:-1000px; top:-1000px; }
+
+// Team Page
+#home-banner {
+
+	.team-member {
+		padding: 20px 20px 40px 20px;
+		border-bottom: 1px solid $vlgrey;
+		clear: both;
+		
+		h1 {
+			margin: 0 0 10px 0;
+			padding: 0;
+		}
+		
+		
+		h2 {
+			border-bottom: 2px solid $vlgrey;
+			display: inline-block;
+			margin: 0 0 20px 0;
+			padding: 0 0 10px 0;
+			font-weight: 100;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $grey;
+		}
+	
+		p {
+			margin: 0 0 10px 0;
+			padding: 0;
+		}
+	}
+	
+	.follow-team {
+		padding: 20px 20px 40px 20px;
+		border-bottom: 1px solid $vlgrey;
+		clear: both;
+		
+		
+		h2 {
+			border-bottom: 2px solid $vlgrey;
+			display: inline-block;
+			margin: 0 0 20px 0;
+			padding: 0 0 10px 0;
+			font-weight: 100;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $grey;
+		}
+	}
+	
+	.social-buttons {
+		margin: 20px 0 0 0;
+		clear: both;
+		padding: 0;
+		min-height: 40px;
+		
+		li {
+			margin: 0 5px 12px 0;
+			padding: 0;
+			list-style: none;
+			display: block;
+			float: left;
+			
+			a  {
+				text-decoration: none;
+				background: black;
+				color: #fff;
+				font-size: 14px;	
+				padding: 6px 12px;
+				@include rounded(2px);
+			
+				&.twi {
+					background: $twitter-color;
+							
+					&:hover {
+						background: darken($twitter-color,5%);
+					}
+				}
+			
+				&.lin {
+					background: $linkedin-color;
+							
+					&:hover {
+						background: darken($linkedin-color,5%);
+					}
+				}
+
+				&.git {
+					background: $github-color;
+							
+					&:hover {
+						background: lighten($github-color,10%);
+					}
+				}
+
+				&.dri {
+					background: $dribbble-color;
+							
+					&:hover {
+						background: darken($dribbble-color,5%);
+					}
+				}
+
+				&.email {
+					background: $orange;
+							
+					&:hover {
+						background: darken($orange,5%);
+					}
+				}
+
+				&.fac {
+					background: $facebook-color;
+							
+					&:hover {
+						background: darken($facebook-color,5%);
+					}
+				}
+
+				&.goo {
+					background: $google-color;
+							
+					&:hover {
+						background: darken($google-color,5%);
+					}
+				}
+
+				&.ang {
+					background: #eee;
+					color: #333;
+							
+					&:hover {
+						background: #ddd;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Misc
+.fb_iframe_widget {
+	top:-7px;
+}

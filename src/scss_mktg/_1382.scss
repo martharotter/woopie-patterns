@@ -1,0 +1,58 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* 1382 =================================================== */
+
+// 1. ROOT 					==============================
+
+
+body {
+max-width : 100%; 
+overflow-x: hidden;
+}
+
+.row	{
+	margin:0 auto;
+	width: 960px;
+	clear:both;
+}
+
+.lcol	{
+	float: left;
+	padding:0 20px;
+	width: 380px;
+}
+
+.rcol	{
+	float: right;
+	padding:0 20px;
+	width: 500px;
+}
+
+.ncol	{
+	float: left;
+	padding:0 20px;
+	width: 240px;
+}
+
+.wcol	{
+	float: right;
+	padding:0 20px;
+	width: 640px;
+}
+
+
+// 2. TYPOGRAPHY 			==============================
+// 3. COLOUR 				==============================
+// 4. TEXTURE 				==============================
+// 5. ELEMENTS 				==============================
+// 6. LAYOUT 				==============================
+// 7. VENDOR-SPECIFIC 		==============================
+// 8. MODERNIZR 			==============================
+// 9. TEMPLATE SPECIFICS 	==============================

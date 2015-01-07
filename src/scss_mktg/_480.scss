@@ -1,0 +1,266 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* 480 =================================================== */
+.row	{
+	margin:0 auto;
+	width: 100%;
+	clear:both;
+}
+
+#top-alert { 
+
+	p, #top-logo {
+		display: none;
+	}
+}
+
+#end-alert	{
+	display:none;
+}
+
+.alertbar {
+
+	background: #000;
+	
+	ul {
+		
+		li {
+			border-bottom: 1px solid $dgrey;
+			display: block;
+			padding: 10px;
+			width: 100%;
+		}
+	}
+}
+
+#home-banner	{
+	
+	nav	{
+
+		margin:0;
+		padding:0;
+
+		ul {
+			float:none;
+			width:100%;
+			margin:0;
+			padding:0;
+			
+			&#sub {
+					border-bottom: 1px solid #222;
+					width: 100%;
+					
+					
+					li {
+						display: inline;display: table-cell;
+							width: 1%;
+						
+						a, b {
+							
+							border: none;
+							padding: 5px;
+						}
+					}
+				}
+
+			li {
+				margin:0;
+
+				a {
+					border-bottom: 1px solid #222;
+					margin:0;
+					padding:10px;
+					text-align: center;
+					display:block;
+				}
+				
+			}
+		}
+	}
+
+	p {
+		padding:0 20px 20px 20px;
+		margin:0;
+	}
+
+	#logo	{
+		margin:10px auto;
+		padding: 10px 0;
+		text-align:center;
+	}
+
+	#headmain	{
+		padding:0 20px;
+		min-height: 180px;
+
+		h1	{
+			color: $dgrey;
+		}
+	}
+
+	#features-list	{
+		display:none;
+	}
+}
+
+#devices, #devices-end	{
+	max-width:100%;
+}
+
+.feature {
+	
+	padding:0;
+	min-height: 200px;
+	
+	hgroup {
+
+		h2 {
+			display:none;
+		}
+	}
+
+	h3	{
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
+
+
+.feature-example	{
+
+	display: block;
+	width: 100%;
+
+	.example-item	{
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;  
+	
+	 
+		h1	{
+			display: block;
+		}
+				
+		p {
+			padding: 5px 20px;
+			margin: 0;
+		}
+	}
+	
+	.example-image 	{
+		display: block;
+		margin: 0;
+		padding: 0;
+		float: none;
+		width: 100%;
+	}	
+
+	.example-image img {
+		padding:20px;
+	}
+
+}
+
+
+#home-banner .rcol	{
+	position: relative;
+}
+
+#webawards {
+	display: block;
+	position: absolute;
+	top:-15	px;
+	left:0;
+}
+
+#splash-devices {
+	margin: 40px 0 0 0;
+	width: 90%; 
+}
+
+#splash-form {
+
+
+	.splash-intro {
+		font-size: 16px;
+		margin: 40px 20px;
+	}
+	
+	.splash-thanks {
+		font-size: 16px;
+		margin: 20px 20px;
+		padding: 20px 0;
+	}
+	
+	&.feature {
+
+		hgroup	{
+			margin: 0 20px;
+		}
+	}
+	
+	form {
+		padding:40px 20px;
+		margin: 0;
+	}
+}
+
+
+// Case Study
+.case-study {
+	.case-study-unit {
+		padding: 0 20px;
+	}
+	
+	.quote {
+		border: none;
+		padding: 20px 0;
+		
+		blockquote {
+			
+			p {
+				font-size: 1.6em;
+			}
+		}
+	}
+}
+
+.download-file {
+	margin: 0 20px 10px 20px;
+}
+
+#cover {
+	margin:0 0 40px 0;
+}
+
+// Team
+
+#home-banner {
+
+	.team-member {
+		
+		img {
+			width: 100%;
+		}
+		
+	}	
+}
+
+
+// 1. ROOT 					==============================
+// 2. TYPOGRAPHY 			==============================
+// 3. COLOUR 				==============================
+// 4. TEXTURE 				==============================
+// 5. ELEMENTS 				==============================
+// 6. LAYOUT 				==============================
+// 7. VENDOR-SPECIFIC 		==============================
+// 8. MODERNIZR 			==============================
+// 9. TEMPLATE SPECIFICS 	==============================

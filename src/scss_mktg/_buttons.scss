@@ -1,0 +1,165 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* Buttons =================================================== */
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 6px 11px 6px;
+  margin-bottom: 0;
+  font: {
+    weight: bold;
+    family: $basefont;
+  }
+  @include font-size(12);
+  line-height: $baselineheight;
+  color: $buttoncolor;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $buttonbackground;
+  border: $buttonborderwidth $buttonborderstyle $buttonbordercolor {
+    bottom-color: $buttonbottombordercolor;
+  }
+  @include border-radius(2px,2px,2px,2px);
+  cursor: pointer;
+  *margin-left: .3em;
+
+  &:visited,
+  &:hover {
+    color: $buttoncolor;
+    text-decoration: none;
+  }
+}
+
+input[type="submit"].btn:hover { border-color: $buttonbordercolor; }
+
+// neutral
+
+.btn-neutral {
+     color:#fff;
+     font-weight: normal;
+     font-size: 11px;
+     padding: 6px 16px 6px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     background: $infocolor;
+     text-shadow:$grey 0 1px 1px ;
+
+     @include vertical($grey, darken($grey,5%));
+
+    border: {
+      color: $grey;
+  }
+
+  &:visited,
+  &:hover { 
+    @include vertical($grey, darken($grey,10%));
+     color: lighten($grey,50%);
+  }
+}
+
+
+// info
+
+.btn-info {
+     color:#fff;
+     font-weight: normal;
+     font-size: 11px;
+     padding: 6px 16px 6px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     background: $infocolor;
+
+     @include vertical($infocolor, darken($infocolor,5%));
+
+    border: {
+      color: $infocolor;
+  }
+
+  &:visited,
+  &:hover { 
+    @include vertical($infocolor, darken($infocolor,10%));
+     color: lighten($infocolor,50%);
+  }
+}
+
+// success
+
+.btn-success {
+     color:#fff;
+     font-weight: normal;
+     font-size: 11px;
+     padding: 6px 16px 6px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     background: $successcolor;
+
+     @include vertical($successcolor, darken($successcolor,10%));
+
+    border: {
+      color: $successcolor;
+  }
+
+  &:visited,
+  &:hover { 
+    @include vertical($successcolor, darken($successcolor,20%));
+     color: lighten($successcolor,50%);
+  }
+}
+
+// warning
+
+.btn-warning {
+     color:#fff;
+     font-weight: normal;
+     font-size: 11px;
+     padding: 6px 16px 6px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     background: $warningcolor;
+
+     @include vertical($warningcolor, darken($warningcolor,10%));
+
+    border: {
+      color: $warningcolor;
+  }
+
+  &:visited,
+  &:hover { 
+    @include vertical($warningcolor, darken($warningcolor,20%));
+     color: lighten($warningcolor,50%);
+  }
+}
+
+// alert
+
+.btn-alert {
+     color:#fff;
+     font-weight: normal;
+     font-size: 11px;
+     padding: 6px 16px 6px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     background: $alertcolor;
+
+     @include vertical($alertcolor, darken($alertcolor,10%));
+
+    border: {
+      color: $alertcolor;
+  }
+
+  &:visited,
+  &:hover { 
+    @include vertical($alertcolor, darken($alertcolor,20%));
+     color: lighten($alertcolor,50%);
+  }
+}
