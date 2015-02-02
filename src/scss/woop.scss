@@ -3162,3 +3162,34 @@ table.cleantable	{
 		}
 	}
 }
+
+// Shortcodes
+.scp	{
+	border-top: 1px solid rgba(0,0,0,0.125);
+	margin-top:-10px;
+	padding: 10px 0 0 0;
+}
+
+.shortcode	{
+	display: inline-block;
+	background: rgba(0,0,0,0.1);
+	color: rgba(0,0,0,0.75);
+	font-weight: 600;
+	padding: 4px 6px;
+	margin-top:-1px;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.125);
+}
+
+.shortcode-help	{
+	font-style: italic;
+	color: #666;
+	padding: 0 10px;
+	font-size: 12px;
+}
+
+.scp .shortcode	{
+	color: #fff;
+	background-color: #0276FD;
+	border-bottom-color: #0D4F8B;
+}
